@@ -1120,10 +1120,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="U$8" library="SRD-05VDC-SL-C" deviceset="RELAY" device="PTH"/>
 <part name="X6" library="con-ptr500" deviceset="AK300/2" device=""/>
 <part name="X7" library="con-ptr500" deviceset="AK300/2" device=""/>
-<part name="U$9" library="SRD-05VDC-SL-C" deviceset="RELAY" device="PTH"/>
-<part name="U$10" library="SRD-05VDC-SL-C" deviceset="RELAY" device="PTH"/>
-<part name="X8" library="con-ptr500" deviceset="AK300/2" device=""/>
-<part name="X9" library="con-ptr500" deviceset="AK300/2" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
@@ -1133,7 +1129,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1169,12 +1164,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <instance part="X6" gate="-2" x="162.56" y="132.08" rot="R180"/>
 <instance part="X7" gate="-1" x="149.86" y="124.46" rot="R180"/>
 <instance part="X7" gate="-2" x="149.86" y="127" rot="R180"/>
-<instance part="U$9" gate="G$1" x="127" y="76.2"/>
-<instance part="U$10" gate="G$1" x="127" y="55.88"/>
-<instance part="X8" gate="-1" x="162.56" y="78.74" rot="R180"/>
-<instance part="X8" gate="-2" x="162.56" y="81.28" rot="R180"/>
-<instance part="X9" gate="-1" x="149.86" y="73.66" rot="R180"/>
-<instance part="X9" gate="-2" x="149.86" y="76.2" rot="R180"/>
 <instance part="SUPPLY1" gate="G$1" x="-2.54" y="119.38" rot="R270"/>
 <instance part="SUPPLY3" gate="G$1" x="-7.62" y="83.82" rot="R270"/>
 <instance part="SUPPLY5" gate="GND" x="0" y="129.54" rot="R90"/>
@@ -1184,7 +1173,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <instance part="SUPPLY10" gate="GND" x="20.32" y="68.58" rot="R270"/>
 <instance part="SUPPLY11" gate="GND" x="20.32" y="124.46" rot="R270"/>
 <instance part="SUPPLY12" gate="GND" x="99.06" y="121.92" rot="R270"/>
-<instance part="SUPPLY13" gate="GND" x="99.06" y="71.12" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -1391,50 +1379,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <junction x="144.78" y="124.46"/>
 </segment>
 </net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="U$9" gate="G$1" pin="SWOPEN"/>
-<wire x1="134.62" y1="71.12" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="71.12" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="SWCLOSE"/>
-<wire x1="137.16" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="60.96" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="60.96" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
-<junction x="137.16" y="60.96"/>
-<wire x1="152.4" y1="78.74" x2="157.48" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="X8" gate="-1" pin="KL"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="U$9" gate="G$1" pin="SWCLOSE"/>
-<wire x1="134.62" y1="81.28" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="81.28" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="SWOPEN"/>
-<wire x1="139.7" y1="50.8" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="81.28" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
-<junction x="139.7" y="81.28"/>
-<pinref part="X8" gate="-2" pin="KL"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="U$9" gate="G$1" pin="SWCOMMON"/>
-<wire x1="134.62" y1="76.2" x2="144.78" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="X9" gate="-2" pin="KL"/>
-<junction x="144.78" y="76.2"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="U$10" gate="G$1" pin="SWCOMMON"/>
-<wire x1="134.62" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="55.88" x2="142.24" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="X9" gate="-1" pin="KL"/>
-<junction x="144.78" y="73.66"/>
-</segment>
-</net>
 <net name="5V" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="5V"/>
@@ -1492,16 +1436,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <wire x1="111.76" y1="101.6" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
 <junction x="111.76" y="121.92"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="COIL0"/>
-<wire x1="116.84" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="COIL0"/>
-<wire x1="111.76" y1="71.12" x2="101.6" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="50.8" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<junction x="111.76" y="71.12"/>
-<pinref part="SUPPLY13" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VO-"/>
@@ -1565,16 +1499,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <pinref part="ULN1" gate="G$1" pin="15"/>
 <wire x1="-12.7" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
 <label x="-7.62" y="53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$9" gate="G$1" pin="COIL1"/>
-<wire x1="116.84" y1="81.28" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$10" gate="G$1" pin="COIL1"/>
-<wire x1="114.3" y1="81.28" x2="101.6" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="60.96" x2="114.3" y2="81.28" width="0.1524" layer="91"/>
-<junction x="114.3" y="81.28"/>
-<label x="101.6" y="81.28" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
