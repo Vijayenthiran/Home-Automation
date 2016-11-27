@@ -987,11 +987,11 @@ ULN2803 Darlington array. 500mA max per channel, 8-channel package. Spark Fun El
 <wire x1="9.61" y1="-7.62" x2="-8.89" y2="-7.62" width="0.2032" layer="21"/>
 <wire x1="-8.89" y1="-7.62" x2="-8.89" y2="7.38" width="0.2032" layer="21"/>
 <wire x1="-8.89" y1="7.38" x2="9.61" y2="7.38" width="0.2032" layer="21"/>
-<pad name="SWCLOSED" x="6.61" y="-6.12" drill="0.9"/>
-<pad name="COIL1" x="-5.39" y="5.88" drill="0.9"/>
-<pad name="SWCOMMON" x="-7.39" y="-0.12" drill="0.9"/>
-<pad name="SWOPEN" x="6.61" y="5.88" drill="0.9"/>
-<pad name="COIL0" x="-5.39" y="-6.12" drill="0.9"/>
+<pad name="SWCLOSED" x="6.61" y="-6.12" drill="0.9" diameter="2.1844" shape="octagon"/>
+<pad name="COIL1" x="-5.39" y="5.88" drill="0.9" diameter="2.1844" shape="octagon"/>
+<pad name="SWCOMMON" x="-7.39" y="-0.12" drill="0.9" diameter="2.1844" shape="octagon"/>
+<pad name="SWOPEN" x="6.61" y="5.88" drill="0.9" diameter="2.1844" shape="octagon"/>
+<pad name="COIL0" x="-5.39" y="-6.12" drill="0.9" diameter="2.1844" shape="octagon"/>
 <text x="-1.27" y="1.27" size="0.6096" layer="25">&gt;Name</text>
 <text x="-1.27" y="-1.27" size="0.6096" layer="27">&gt;Value</text>
 </package>
