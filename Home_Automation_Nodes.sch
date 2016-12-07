@@ -4640,11 +4640,11 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4694,11 +4694,11 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <instance part="SUPPLY2" gate="G$1" x="106.68" y="71.12" rot="R180"/>
 <instance part="SUPPLY6" gate="G$1" x="127" y="71.12" rot="R180"/>
 <instance part="SUPPLY13" gate="GND" x="129.54" y="68.58"/>
-<instance part="SUPPLY14" gate="G$1" x="111.76" y="71.12" rot="R180"/>
 <instance part="SUPPLY15" gate="G$1" x="124.46" y="71.12" rot="R180"/>
 <instance part="C1" gate="G$1" x="5.08" y="109.22"/>
 <instance part="SUPPLY16" gate="G$1" x="10.16" y="114.3"/>
 <instance part="SUPPLY17" gate="GND" x="10.16" y="99.06"/>
+<instance part="SUPPLY14" gate="GND" x="111.76" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -4908,11 +4908,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <wire x1="-5.08" y1="119.38" x2="-2.54" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="111.76" y1="76.2" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="SUPPLY14" gate="G$1" pin="5V"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="76.2" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="G$1" pin="5V"/>
@@ -4986,6 +4981,11 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <wire x1="10.16" y1="101.6" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="101.6" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
 <junction x="10.16" y="101.6"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="3"/>
+<wire x1="111.76" y1="76.2" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="RELAY1" class="0">
