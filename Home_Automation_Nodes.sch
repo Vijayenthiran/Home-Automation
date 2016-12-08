@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4632,9 +4632,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY12" library="supply2" deviceset="GND" device=""/>
 <part name="J1" library="con-amp" deviceset="MTA03-100" device=""/>
 <part name="J2" library="con-amp" deviceset="MTA07-100" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -4645,6 +4642,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4686,9 +4686,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <instance part="SUPPLY7" gate="GND" x="-5.08" y="86.36" rot="R90"/>
 <instance part="SUPPLY8" gate="G$1" x="-10.16" y="27.94" rot="R270"/>
 <instance part="SUPPLY9" gate="GND" x="-48.26" y="27.94" rot="R270"/>
-<instance part="SUPPLY10" gate="GND" x="20.32" y="68.58" rot="R270"/>
-<instance part="SUPPLY11" gate="GND" x="20.32" y="124.46" rot="R270"/>
-<instance part="SUPPLY12" gate="GND" x="99.06" y="121.92" rot="R270"/>
 <instance part="J1" gate="G$1" x="109.22" y="78.74"/>
 <instance part="J2" gate="G$1" x="132.08" y="78.74"/>
 <instance part="SUPPLY2" gate="G$1" x="106.68" y="71.12" rot="R180"/>
@@ -4699,6 +4696,9 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <instance part="SUPPLY16" gate="G$1" x="10.16" y="114.3"/>
 <instance part="SUPPLY17" gate="GND" x="10.16" y="99.06"/>
 <instance part="SUPPLY14" gate="GND" x="111.76" y="68.58"/>
+<instance part="SUPPLY10" gate="G$1" x="22.86" y="124.46" rot="R90"/>
+<instance part="SUPPLY11" gate="G$1" x="22.86" y="68.58" rot="R90"/>
+<instance part="SUPPLY12" gate="G$1" x="101.6" y="121.92" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4921,6 +4921,36 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <wire x1="15.24" y1="114.3" x2="15.24" y2="111.76" width="0.1524" layer="91"/>
 <junction x="10.16" y="114.3"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="COIL0"/>
+<wire x1="38.1" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="COIL0"/>
+<wire x1="33.02" y1="124.46" x2="22.86" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="104.14" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="104.14" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
+<junction x="33.02" y="124.46"/>
+<pinref part="SUPPLY10" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="COIL0"/>
+<wire x1="38.1" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="COIL0"/>
+<wire x1="33.02" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="48.26" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
+<junction x="33.02" y="68.58"/>
+<pinref part="SUPPLY11" gate="G$1" pin="5V"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="G$1" pin="COIL0"/>
+<wire x1="116.84" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="G$1" pin="COIL0"/>
+<wire x1="111.76" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="101.6" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="101.6" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
+<junction x="111.76" y="121.92"/>
+<pinref part="SUPPLY12" gate="G$1" pin="5V"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -4932,36 +4962,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <pinref part="ULN1" gate="G$1" pin="9"/>
 <wire x1="-45.72" y1="27.94" x2="-40.64" y2="27.94" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$5" gate="G$1" pin="COIL0"/>
-<wire x1="38.1" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="COIL0"/>
-<wire x1="33.02" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="48.26" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
-<junction x="33.02" y="68.58"/>
-<pinref part="SUPPLY10" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="COIL0"/>
-<wire x1="38.1" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="COIL0"/>
-<wire x1="33.02" y1="124.46" x2="22.86" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="104.14" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="104.14" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
-<junction x="33.02" y="124.46"/>
-<pinref part="SUPPLY11" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$7" gate="G$1" pin="COIL0"/>
-<wire x1="116.84" y1="121.92" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="COIL0"/>
-<wire x1="111.76" y1="121.92" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="101.6" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="101.6" x2="111.76" y2="121.92" width="0.1524" layer="91"/>
-<junction x="111.76" y="121.92"/>
-<pinref part="SUPPLY12" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VO-"/>
