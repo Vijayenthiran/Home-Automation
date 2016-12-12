@@ -161,25 +161,23 @@
 <packages>
 <package name="WEMOS">
 <description>WEMOS Controller socket</description>
-<pad name="3V3" x="0" y="0" drill="0.8" shape="octagon"/>
-<pad name="D8" x="0" y="2.54" drill="0.8" shape="octagon"/>
-<pad name="D7" x="0" y="5.08" drill="0.8" shape="octagon"/>
-<pad name="D6" x="0" y="7.62" drill="0.8" shape="octagon"/>
-<pad name="D5" x="0" y="10.16" drill="0.8" shape="octagon"/>
-<pad name="D0" x="0" y="12.7" drill="0.8" shape="octagon"/>
-<pad name="A0" x="0" y="15.24" drill="0.8" shape="octagon"/>
-<pad name="RST" x="0" y="17.78" drill="0.8" shape="octagon"/>
-<pad name="5V" x="22.86" y="0" drill="0.8" shape="octagon"/>
-<pad name="GND" x="22.86" y="2.54" drill="0.8" shape="octagon"/>
-<pad name="D4" x="22.86" y="5.08" drill="0.8" shape="octagon"/>
-<pad name="D3" x="22.86" y="7.62" drill="0.8" shape="octagon"/>
-<pad name="D2" x="22.86" y="10.16" drill="0.8" shape="octagon"/>
-<pad name="D1" x="22.86" y="12.7" drill="0.8" shape="octagon"/>
-<pad name="RX" x="22.86" y="15.24" drill="0.8" shape="octagon"/>
-<pad name="TX" x="22.86" y="17.78" drill="0.8" shape="octagon"/>
-<rectangle x1="-1.27" y1="-1.27" x2="1.27" y2="19.05" layer="21"/>
-<rectangle x1="21.59" y1="-1.27" x2="24.13" y2="19.05" layer="21"/>
-<text x="8.89" y="19.05" size="0.8128" layer="21" font="vector"> WEMOS
+<pad name="3V3" x="0" y="0" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D8" x="0" y="2.54" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D7" x="0" y="5.08" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D6" x="0" y="7.62" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D5" x="0" y="10.16" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D0" x="0" y="12.7" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="A0" x="0" y="15.24" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="RST" x="0" y="17.78" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="5V" x="22.86" y="0" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="GND" x="22.86" y="2.54" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D4" x="22.86" y="5.08" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D3" x="22.86" y="7.62" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D2" x="22.86" y="10.16" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="D1" x="22.86" y="12.7" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="RX" x="22.86" y="15.24" drill="0.8" diameter="1.524" shape="octagon"/>
+<pad name="TX" x="22.86" y="17.78" drill="0.8" diameter="1.524" shape="octagon"/>
+<text x="11.43" y="19.05" size="0.8128" layer="21" font="vector" align="center"> WEMOS D1 Mini
 Controller</text>
 <wire x1="2" y1="-9" x2="25" y2="-9" width="0.127" layer="21"/>
 <wire x1="25" y1="-9" x2="25" y2="24" width="0.127" layer="21"/>
@@ -209,6 +207,14 @@ Facing DOWN/PCB</text>
 <text x="19.05" y="12.065" size="1.27" layer="21" font="vector">D1</text>
 <text x="19.05" y="14.605" size="1.27" layer="21" font="vector">RX</text>
 <text x="19.05" y="17.145" size="1.27" layer="21" font="vector">TX</text>
+<wire x1="-1.27" y1="19.05" x2="1.27" y2="19.05" width="0.127" layer="21"/>
+<wire x1="1.27" y1="19.05" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="19.05" width="0.127" layer="21"/>
+<wire x1="21.59" y1="19.05" x2="24.13" y2="19.05" width="0.127" layer="21"/>
+<wire x1="24.13" y1="19.05" x2="24.13" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="24.13" y1="-1.27" x2="21.59" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="21.59" y1="-1.27" x2="21.59" y2="19.05" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1085,157 +1091,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="con-amp">
-<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
-RJ45 Jack connectors&lt;br&gt;
- Based on the previous libraris:
- &lt;ul&gt;
- &lt;li&gt;amp.lbr
- &lt;li&gt;amp-j.lbr
- &lt;li&gt;amp-mta.lbr
- &lt;li&gt;amp-nlok.lbr
- &lt;li&gt;amp-sim.lbr
- &lt;li&gt;amp-micro-match.lbr
- &lt;/ul&gt;
- Sources :
- &lt;ul&gt;
- &lt;li&gt;Catalog 82066 Revised 11-95 
- &lt;li&gt;Product Guide 296785 Rev. 8-99
- &lt;li&gt;Product Guide CD-ROM 1999
- &lt;li&gt;www.amp.com
- &lt;/ul&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="10X03MTA">
-<description>&lt;b&gt;AMP MTA connector&lt;/b&gt;&lt;p&gt;
-Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
-<wire x1="-3.81" y1="-1.27" x2="-3.81" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.905" x2="-3.81" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.81" y1="1.905" x2="3.81" y2="1.27" width="0.1524" layer="21"/>
-<pad name="3" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="1" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="-3.2512" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.7762" y="2.1509" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="21"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="21"/>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
-</package>
-<package name="10X07MTA">
-<description>&lt;b&gt;AMP MTA connector&lt;/b&gt;&lt;p&gt;
-Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
-<wire x1="-8.89" y1="-1.27" x2="-8.89" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="1.27" x2="-8.89" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="1.27" x2="8.89" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-1.27" x2="8.89" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="1.27" x2="-8.89" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="1.905" x2="-8.89" y2="1.905" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="1.905" x2="8.89" y2="1.27" width="0.1524" layer="21"/>
-<pad name="7" x="-7.62" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="6" x="-5.08" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="5" x="-2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="0" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="5.08" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="1" x="7.62" y="0" drill="1.016" shape="long" rot="R90"/>
-<text x="-2.6162" y="-3.2512" size="1.27" layer="25">&gt;NAME</text>
-<text x="-8.7762" y="2.3508" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
-<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="21"/>
-<rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="21"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="21"/>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="21"/>
-<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="21"/>
-<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MTA-1_3">
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-1.905" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-1.905" x2="3.81" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="1.27" x2="3.81" y2="1.27" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="2.54" y="0" radius="0.635" width="0.254" layer="94"/>
-<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="5.08" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="-1.27" size="1.27" layer="95">1</text>
-<pin name="1" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="3" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
-<symbol name="MTA-1_7">
-<wire x1="-8.89" y1="1.27" x2="-8.89" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="8.89" y1="-1.905" x2="-8.89" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="8.89" y1="-1.905" x2="8.89" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-8.89" y1="1.27" x2="8.89" y2="1.27" width="0.254" layer="94"/>
-<circle x="-7.62" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="-5.08" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="2.54" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="5.08" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="7.62" y="0" radius="0.635" width="0.254" layer="94"/>
-<text x="10.16" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="10.16" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-10.16" y="-1.27" size="1.27" layer="95">1</text>
-<pin name="1" x="-7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="2" x="-5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="3" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="4" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="5" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="6" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="7" x="7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MTA03-100" prefix="J" uservalue="yes">
-<description>&lt;b&gt;AMP connector&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="MTA-1_3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="10X03MTA">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MTA07-100" prefix="J" uservalue="yes">
-<description>&lt;b&gt;AMP connector&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="MTA-1_7" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="10X07MTA">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4599,6 +4454,90 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-amp">
+<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
+RJ45 Jack connectors&lt;br&gt;
+ Based on the previous libraris:
+ &lt;ul&gt;
+ &lt;li&gt;amp.lbr
+ &lt;li&gt;amp-j.lbr
+ &lt;li&gt;amp-mta.lbr
+ &lt;li&gt;amp-nlok.lbr
+ &lt;li&gt;amp-sim.lbr
+ &lt;li&gt;amp-micro-match.lbr
+ &lt;/ul&gt;
+ Sources :
+ &lt;ul&gt;
+ &lt;li&gt;Catalog 82066 Revised 11-95 
+ &lt;li&gt;Product Guide 296785 Rev. 8-99
+ &lt;li&gt;Product Guide CD-ROM 1999
+ &lt;li&gt;www.amp.com
+ &lt;/ul&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="10X04MTA">
+<description>&lt;b&gt;AMP MTA connector&lt;/b&gt;&lt;p&gt;
+Source: http://ecommas.tycoelectronics.com .. ENG_CD_640456_W.pdf</description>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="1.27" width="0.1524" layer="21"/>
+<pad name="4" x="-3.81" y="0" drill="1.016" shape="long" rot="R270"/>
+<pad name="3" x="-1.27" y="0" drill="1.016" shape="long" rot="R270"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R270"/>
+<pad name="1" x="3.81" y="0" drill="1.016" shape="long" rot="R270"/>
+<text x="-3.2512" y="-3.2512" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.9761" y="2.1509" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="21"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="21"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="21"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MTA-1_4">
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-1.905" x2="-3.81" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="6.35" y1="-1.905" x2="6.35" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="6.35" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="0.635" width="0.254" layer="94"/>
+<text x="7.62" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="7.62" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-5.08" y="-1.27" size="1.27" layer="95">1</text>
+<pin name="1" x="-2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="3" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="4" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MTA04-100" prefix="J" uservalue="yes">
+<description>&lt;b&gt;AMP connector&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MTA-1_4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="10X04MTA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4611,9 +4550,8 @@ Source: AVX .. aphvc.pdf</description>
 <parts>
 <part name="U$1" library="WeMos D1 Mini" deviceset="WEMOS" device=""/>
 <part name="U$2" library="captain-slow" deviceset="MAINS_CONVERTERS" device=""/>
-<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="X1" library="con-ptr500" deviceset="AK300/2" device=""/>
-<part name="ULN1" library="SparkFun-PowerIC" deviceset="ULN2803" device="DIP"/>
+<part name="ULN1" library="SparkFun-PowerIC" deviceset="ULN2803" device="DIP" value="ULN2803"/>
 <part name="U$3" library="SRD-05VDC-SL-C" deviceset="RELAY" device="PTH"/>
 <part name="U$4" library="SRD-05VDC-SL-C" deviceset="RELAY" device="PTH"/>
 <part name="X2" library="con-ptr500" deviceset="AK300/2" device=""/>
@@ -4632,12 +4570,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="GND" device=""/>
-<part name="J1" library="con-amp" deviceset="MTA03-100" device=""/>
-<part name="J2" library="con-amp" deviceset="MTA07-100" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
-<part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="025-025X050" value="0.1uF"/>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
@@ -4645,6 +4578,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="J1" library="con-amp" deviceset="MTA04-100" device=""/>
+<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4658,7 +4594,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <instances>
 <instance part="U$1" gate="G$1" x="-30.48" y="81.28"/>
 <instance part="U$2" gate="G$1" x="-17.78" y="124.46"/>
-<instance part="SUPPLY4" gate="G$1" x="-38.1" y="83.82" rot="R90"/>
 <instance part="X1" gate="-1" x="-40.64" y="124.46"/>
 <instance part="X1" gate="-2" x="-40.64" y="121.92"/>
 <instance part="ULN1" gate="G$1" x="-27.94" y="50.8"/>
@@ -4686,12 +4621,7 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <instance part="SUPPLY7" gate="GND" x="-5.08" y="86.36" rot="R90"/>
 <instance part="SUPPLY8" gate="G$1" x="-10.16" y="27.94" rot="R270"/>
 <instance part="SUPPLY9" gate="GND" x="-48.26" y="27.94" rot="R270"/>
-<instance part="J1" gate="G$1" x="109.22" y="78.74"/>
-<instance part="J2" gate="G$1" x="132.08" y="78.74"/>
 <instance part="SUPPLY2" gate="G$1" x="106.68" y="71.12" rot="R180"/>
-<instance part="SUPPLY6" gate="G$1" x="127" y="71.12" rot="R180"/>
-<instance part="SUPPLY13" gate="GND" x="129.54" y="68.58"/>
-<instance part="SUPPLY15" gate="G$1" x="124.46" y="71.12" rot="R180"/>
 <instance part="C1" gate="G$1" x="5.08" y="109.22"/>
 <instance part="SUPPLY16" gate="G$1" x="10.16" y="114.3"/>
 <instance part="SUPPLY17" gate="GND" x="10.16" y="99.06"/>
@@ -4699,6 +4629,9 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <instance part="SUPPLY10" gate="G$1" x="22.86" y="124.46" rot="R90"/>
 <instance part="SUPPLY11" gate="G$1" x="22.86" y="68.58" rot="R90"/>
 <instance part="SUPPLY12" gate="G$1" x="101.6" y="121.92" rot="R90"/>
+<instance part="SUPPLY4" gate="G$1" x="-38.1" y="83.82" rot="R90"/>
+<instance part="J1" gate="G$1" x="106.68" y="78.74"/>
+<instance part="SUPPLY6" gate="G$1" x="104.14" y="71.12" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -4720,19 +4653,14 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="3V3"/>
-<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="-38.1" y1="83.82" x2="-35.56" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="76.2" x2="106.68" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
+<pinref part="J1" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="127" y1="76.2" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
+<pinref part="U$1" gate="G$1" pin="3V3"/>
+<wire x1="-38.1" y1="83.82" x2="-35.56" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="SW1" class="0">
@@ -4742,9 +4670,9 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <label x="-45.72" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D5"/>
-<wire x1="-35.56" y1="93.98" x2="-40.64" y2="93.98" width="0.1524" layer="91"/>
-<label x="-43.18" y="93.98" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="D0"/>
+<wire x1="-35.56" y1="96.52" x2="-40.64" y2="96.52" width="0.1524" layer="91"/>
+<label x="-43.18" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW2" class="0">
@@ -4754,9 +4682,9 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <label x="-45.72" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D6"/>
-<wire x1="-35.56" y1="91.44" x2="-40.64" y2="91.44" width="0.1524" layer="91"/>
-<label x="-43.18" y="91.44" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="D3"/>
+<wire x1="-10.16" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
+<label x="-5.08" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW3" class="0">
@@ -4766,21 +4694,9 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <label x="-45.72" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="D7"/>
-<wire x1="-35.56" y1="88.9" x2="-40.64" y2="88.9" width="0.1524" layer="91"/>
-<label x="-43.18" y="88.9" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SW4" class="0">
-<segment>
-<pinref part="ULN1" gate="G$1" pin="4"/>
-<wire x1="-40.64" y1="53.34" x2="-45.72" y2="53.34" width="0.1524" layer="91"/>
-<label x="-45.72" y="53.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="D8"/>
-<wire x1="-35.56" y1="86.36" x2="-40.64" y2="86.36" width="0.1524" layer="91"/>
-<label x="-43.18" y="86.36" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="D4"/>
+<wire x1="-10.16" y1="88.9" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
+<label x="-5.08" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -4908,11 +4824,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <wire x1="-5.08" y1="119.38" x2="-2.54" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="124.46" y1="76.2" x2="124.46" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="SUPPLY15" gate="G$1" pin="5V"/>
-</segment>
-<segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="111.76" x2="5.08" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="SUPPLY16" gate="G$1" pin="5V"/>
@@ -4951,6 +4862,11 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <junction x="111.76" y="121.92"/>
 <pinref part="SUPPLY12" gate="G$1" pin="5V"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="104.14" y1="76.2" x2="104.14" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="SUPPLY6" gate="G$1" pin="5V"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -4969,11 +4885,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <wire x1="-5.08" y1="129.54" x2="-2.54" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="129.54" y1="76.2" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="SUPPLY13" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="5.08" y1="104.14" x2="5.08" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
@@ -4983,9 +4894,9 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <junction x="10.16" y="101.6"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="3"/>
 <wire x1="111.76" y1="76.2" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="RELAY1" class="0">
@@ -5039,13 +4950,6 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <label x="101.6" y="132.08" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
-<net name="RELAY4" class="0">
-<segment>
-<pinref part="ULN1" gate="G$1" pin="15"/>
-<wire x1="-12.7" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
-<label x="-7.62" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="X3" gate="-1" pin="KL"/>
@@ -5081,9 +4985,9 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <label x="-43.18" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="76.2" x2="109.22" y2="71.12" width="0.1524" layer="91"/>
 <label x="109.22" y="66.04" size="1.778" layer="95" rot="R90"/>
+<pinref part="J1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="D1" class="0">
@@ -5092,46 +4996,12 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <wire x1="-10.16" y1="96.52" x2="-5.08" y2="96.52" width="0.1524" layer="91"/>
 <label x="-5.08" y="96.52" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="132.08" y1="76.2" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
-<label x="132.08" y="66.04" size="1.778" layer="95" rot="R90"/>
-</segment>
 </net>
 <net name="D2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D2"/>
 <wire x1="-10.16" y1="93.98" x2="-5.08" y2="93.98" width="0.1524" layer="91"/>
 <label x="-5.08" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="134.62" y1="76.2" x2="134.62" y2="71.12" width="0.1524" layer="91"/>
-<label x="134.62" y="66.04" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="D3" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D3"/>
-<wire x1="-10.16" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
-<label x="-5.08" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="6"/>
-<wire x1="137.16" y1="76.2" x2="137.16" y2="71.12" width="0.1524" layer="91"/>
-<label x="137.16" y="66.04" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="D4" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="D4"/>
-<wire x1="-10.16" y1="88.9" x2="-5.08" y2="88.9" width="0.1524" layer="91"/>
-<label x="-5.08" y="88.9" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="7"/>
-<wire x1="139.7" y1="76.2" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
-<label x="139.7" y="66.04" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -5144,6 +5014,24 @@ Relay lbr from: https://github.com/dvdnhm/Maker-Tools-Eagle-Libraries</text>
 <segment>
 <pinref part="U$1" gate="G$1" pin="TX"/>
 <wire x1="-10.16" y1="101.6" x2="-5.08" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D5" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D5"/>
+<wire x1="-35.56" y1="93.98" x2="-40.64" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D6" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D6"/>
+<wire x1="-35.56" y1="91.44" x2="-40.64" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D7" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D7"/>
+<wire x1="-35.56" y1="88.9" x2="-40.64" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
