@@ -168,20 +168,20 @@
 <hole x="118.25" y="2.75" drill="2.75"/>
 <hole x="118.25" y="67.25" drill="2.75"/>
 <hole x="2.75" y="67.25" drill="2.75"/>
-<wire x1="32.283009375" y1="69.5530625" x2="32.283009375" y2="-0.018778125" width="0.4064" layer="25" style="longdash"/>
-<wire x1="32.938665625" y1="69.5530625" x2="32.938665625" y2="-0.018778125" width="0.4064" layer="26" style="longdash"/>
-<text x="41.47381875" y="1.338028125" size="1.778" layer="21">AC Main IN</text>
-<text x="62.4967125" y="2.819209375" size="1.778" layer="21" align="center">Incoming
+<wire x1="32.283009375" y1="69.5530625" x2="32.283009375" y2="-0.018778125" width="0.4064" layer="21" style="longdash"/>
+<wire x1="32.938665625" y1="69.5530625" x2="32.938665625" y2="-0.018778125" width="0.4064" layer="22" style="longdash"/>
+<text x="40.642521875" y="2.482528125" size="1.6764" layer="21" font="vector">AC Main IN</text>
+<text x="62.4967125" y="2.819209375" size="1.6764" layer="21" font="vector" align="center">Incoming
 Line</text>
-<text x="93.88396875" y="2.731903125" size="1.778" layer="21" align="center">Incoming
+<text x="93.88396875" y="2.731903125" size="1.6764" layer="21" font="vector" align="center">Incoming
 Line</text>
-<text x="118.557840625" y="39.13890625" size="1.778" layer="21" rot="R90" align="center">Incoming
+<text x="118.557840625" y="39.13890625" size="1.6764" layer="21" font="vector" rot="R90" align="center">Incoming
 Line</text>
-<text x="74.52849375" y="2.731903125" size="1.778" layer="21" rot="R180" align="center">Outgoing
+<text x="74.52849375" y="2.731903125" size="1.6764" layer="21" font="vector" rot="R180" align="center">Outgoing
 Line</text>
-<text x="105.828565625" y="2.64459375" size="1.778" layer="21" rot="R180" align="center">Outgoing
+<text x="105.828565625" y="2.64459375" size="1.6764" layer="21" font="vector" rot="R180" align="center">Outgoing
 Line</text>
-<text x="118.29628125" y="50.75073125" size="1.778" layer="21" rot="R270" align="center">Outgoing
+<text x="118.29628125" y="50.75073125" size="1.6764" layer="21" font="vector" rot="R270" align="center">Outgoing
 Line</text>
 <wire x1="1.280853125" y1="23.542628125" x2="40.351259375" y2="23.542628125" width="0.254" layer="49"/>
 <wire x1="40.351259375" y1="23.542628125" x2="40.351259375" y2="23.605378125" width="0.254" layer="49"/>
@@ -193,14 +193,14 @@ Line</text>
 <dimension x1="0" y1="70" x2="5.503834375" y2="68.517615625" x3="2.751915625" y3="-6.835825" textsize="1.778" layer="47" dtype="horizontal" precision="3"/>
 <dimension x1="0" y1="0" x2="5.444725" y2="0" x3="3.85" y3="3.85" textsize="0.6096" layer="47" dtype="angle"/>
 <dimension x1="0" y1="0" x2="2.69" y2="2.81" x3="5.906065625" y3="-2.9612875" textsize="0.6096" layer="47" precision="3"/>
-<text x="107.53" y="20.02" size="2.54" layer="22" rot="MR0">4 Way Switching Home Automation Node v0.6</text>
-<text x="35.6" y="22.9" size="2.54" layer="21">4 Way Switching Home Automation Node v0.6</text>
+<text x="109.0886875" y="20.124046875" size="1.778" layer="22" font="vector" rot="MR0">4 Way Switching Home Automation Node Rev 12</text>
+<text x="42.977784375" y="22.483815625" size="1.778" layer="21" font="vector">4 Way Switching Home Automation Node Rev 12</text>
 <text x="17.971040625" y="27.125184375" size="0.8128" layer="21" rot="R90">3.3V</text>
 <text x="20.396771875" y="27.214065625" size="0.8128" layer="21" rot="R90">A0</text>
 <text x="23.0095375" y="27.249640625" size="0.8128" layer="21" rot="R90">GND</text>
-<text x="109.1438" y="66.9036" size="1.778" layer="22" rot="MR0">Docs: github.com/Vijayenthiran</text>
-<text x="63.0428" y="67.1322" size="1.778" layer="22" rot="MR0">ChennaiMakerspace.com</text>
-<text x="93.1418" y="45.7962" size="1.778" layer="22" rot="MR0">&lt; --------- CAUTION: HIGH VOLTAGE --------- &gt;</text>
+<text x="114.134809375" y="66.482503125" size="1.778" layer="22" font="vector" rot="MR0">Docs: github.com/Vijayenthiran</text>
+<text x="66.04943125" y="66.7712625" size="1.778" layer="22" font="vector" rot="MR0">ChennaiMakerspace.com</text>
+<text x="102.55829375" y="45.588084375" size="1.778" layer="22" font="vector" rot="MR0">&lt; ----- CAUTION: HIGH VOLTAGE ----- &gt;</text>
 <text x="15.502353125" y="27.194440625" size="0.8128" layer="21" rot="R90">5V</text>
 </plain>
 <libraries>
